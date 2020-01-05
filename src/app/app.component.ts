@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as sal from 'sal.js';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'portfolio';
+  
+  ngOnInit() {
+    sal({
+      once: false,
+    });
+  }
 }

@@ -1,0 +1,41 @@
+<div style="height: 100vh"></div>
+<div class="wrapper d-flex align-items-stretch bg-light">
+  <nav [@scrollAnimation]="state" id="sidebar">
+    <ul>
+      <li>
+        <a routerLink="/">
+          <i class="material-icons about">account_box</i>
+          <p class="about">About Me</p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/code">
+          <i class="material-icons code">code</i>
+          <p class="code">Code</p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/work">
+          <i class="material-icons work">work</i>
+          <p class="work">Projects</p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/art">
+          <i class="material-icons art">art_track</i>
+          <p class="art">Graphic Design</p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact">
+          <i class="material-icons contact">chat</i>
+          <p class="contact">Contact Me</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="p-4 p-md-5 bg-light text-dark" id="content">
+    <app-about></app-about>
+    <app-code></app-code>
+  </div>
+</div>
