@@ -8,6 +8,9 @@ import { LandingComponent } from './landing/landing.component';
 import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { CodeComponent } from './code/code.component';
+import * as $ from "jquery";
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { CodeComponent } from './code/code.component';
     LandingComponent,
     NavComponent,
     AboutComponent,
-    CodeComponent
+    CodeComponent,
+    ExperienceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

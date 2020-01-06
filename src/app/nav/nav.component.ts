@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import * as sal from 'sal.js';
+import * as $ from 'jquery';
 
 import {
   trigger,
@@ -36,15 +37,20 @@ export class NavComponent implements OnInit {
     sal({
       once: false,
     });
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("toggled");
+      $(".hamburger").toggleClass("is-active");
+      console.log("yeeeeeeeet");
+    });
+    // const element = document.getElementById('about');
 
-    // const element = document.getElementById('landing');
-
-    // element.addEventListener('sal:out', ({ target }) => {
+    // element.addEventListener('sal:in', ({ target }) => {
     //   this.state = 'show'
     //   console.log('entering', target);
     // });
 
-    // element.addEventListener('sal:in', ({ target }) => {
+    // element.addEventListener('sal:out', ({ target }) => {
     //   this.state = 'hide'
     //   console.log('entering', target);
     // });
