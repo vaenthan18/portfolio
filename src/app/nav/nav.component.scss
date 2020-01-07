@@ -2,7 +2,7 @@
 
 i {
     color: #a1a1a1;
-    position: fixed;
+    position: absolute;
   }
   
   .about {
@@ -44,8 +44,6 @@ i {
     left: -250px;
     height: 100vh;
     z-index: 998;
-    background-color: black;
-    color: #fff;
     transition: all 0.5s ease-in-out;
     ul.components{
       padding: 0;

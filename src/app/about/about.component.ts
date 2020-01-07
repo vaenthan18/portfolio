@@ -20,18 +20,16 @@ export class AboutComponent implements OnInit {
     const element = document.getElementById('about');
     const array = document.getElementsByClassName("about");
 
-    element.addEventListener('sal:in', ({ target }) => {
+    element.addEventListener('sal:in', () => {
       for (let i = 0; i < array.length; i++) {
         (<HTMLElement>array[i]).style.color="#424242";
       }
-      console.log('entering', target);
     });
 
-    element.addEventListener('sal:out', ({ target }) => {
+    element.addEventListener('sal:out', () => {
       for (let i = 0; i < array.length; i++) {
         (<HTMLElement>array[i]).style.color="#a1a1a1";
       }
-      console.log('entering', target);
     });
   }
 }
