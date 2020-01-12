@@ -13,6 +13,7 @@ export class AppComponent {
   ngOnInit() {
     sal({
       once: false,
+      threshold: 0.2
     });
   }
 }

@@ -1,1 +1,24 @@
 @import "../../../node_modules/sal.js/dist/sal.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css";
+
+.icon {
+    font-size: 3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    :hover {
+        transform: scale(1.1);
+        color: #F8F9FA;
+    }
+}
+
+a {
+    z-index: 1000;
+}
+
+.backg {
+    background-color: rgb(31, 31, 31);
+}
+
+.text {
+    color: #0ff;
+}

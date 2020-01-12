@@ -179,6 +179,13 @@
   }
 }
 
+.stay {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  left: 0;
+}
+
 .glitch {
   font-family: futura-pt-demi, sans-serif;
   position: relative;
@@ -253,7 +260,7 @@ h2 {
   width: 300px;
   height: 1px;
   bottom: 125px;
-  left: 300px;
+  left: 310px;
   background-color: #444444;
   .colour {
     width: 130px;
@@ -271,8 +278,118 @@ h2 {
   }
 }
 
-body,
-html {
-  overflow-x: hidden;
-  overflow-y: auto;
+// body,
+// html {
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+
+// .left {
+//   width: 300px;
+//   height: 1px;
+//   bottom: 125px;
+//   left: 300px;
+//   background-color: #444444;
+//   .colour {
+//     width: 130px;
+//     height: 3px;
+//   }
+// }
+
+// .right {
+//   width: 130px;
+//   height: 1px;
+//   bottom: 400px;
+//   left: 815px;
+//   .colour {
+//     width: 100%;
+//   }
+// }
+
+@media only screen and (max-width: 1100px) {
+  .lines {
+    transform: otate(120deg);
+  }
+  .glitch {
+    font-size: 40px;
+    left: -50px;
+    letter-spacing: 50px;
+  }
+  .left {
+    left: 210px;
+    bottom: 110px;
+  }
+
+  .right {
+    left: 680px;
+    bottom: 390px;
+  }
+  #subtitle {
+    font-size: 20px;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .lines {
+    transform: rotate(120deg);
+  }
+  .glitch {
+    font-size: 30px;
+    left: -100px;
+    letter-spacing: 40px;
+  }
+  .left {
+    left: 85px;
+    bottom: 105px;
+  }
+
+  .right {
+    left: 480px;
+    bottom: 360px;
+  }
+  #subtitle {
+    font-size: 20px;
+    left: 50px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .lines {
+    transform: rotate(120deg);
+  }
+  .glitch {
+    font-size: 25px;
+    left: 0px;
+    letter-spacing: 20px;
+  }
+
+  .stay {
+    text-align: center;
+    display: inline-block;
+    top: 40vh;
+  }
+
+  #Vaenthan {
+    position: static;
+  }
+
+  #Jeevarajah {
+    position: static;
+  }
+
+  .left {
+    left: 0px;
+    bottom: 80px;
+    visibility: hidden;
+  }
+
+  .right {
+    left: 100px;
+    bottom: 360px;
+    visibility: hidden;
+  }
+  #subtitle {
+    visibility: hidden;
+  }
 }

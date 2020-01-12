@@ -1,4 +1,48 @@
 @import "../../../node_modules/sal.js/dist/sal.css";
+.setHeight {
+    height: 100vh;
+}
+
 svg {
-    width: 50px;
+  height: 1.5em;
+  margin-left: 0.5em;
+}
+
+.card {
+  height: 40vh;
+  text-decoration: none;
+  .mask {
+    overflow: hidden;
+    height: 25vh;
+  }
+  // img {
+  //     filter: brightness(1);
+  // }
+}
+
+a:hover {
+  background-color: black;
+  img {
+    filter: brightness(1);
+  }
+}
+
+.badge {
+  display: inline-flex;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 725px) {
+  .setHeight {
+    height: fit-content;
+  }
 }

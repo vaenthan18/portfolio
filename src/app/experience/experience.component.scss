@@ -1,1 +1,40 @@
 @import "../../../node_modules/sal.js/dist/sal.css";
+.setHeight {
+  height: 100vh;
+}
+
+.backg {
+  background-color: white;
+}
+
+img {
+  background-color: black;
+}
+
+.image {
+  overflow: hidden;
+  height: 6em;
+}
+
+h1 {
+  color: #ff4e50;
+}
+
+.badge {
+  background-color: #ff4e50;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+    transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 725px) {
+  .setHeight {
+    height: fit-content;
+  }
+}
+
