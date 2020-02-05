@@ -9,11 +9,11 @@ import * as sal from 'sal.js';
 export class AppComponent {
 
   title = 'portfolio';
-  
+
   ngOnInit() {
     sal({
       once: false,
-      threshold: 0.2
+      threshold: 0.1
     });
   }
 }

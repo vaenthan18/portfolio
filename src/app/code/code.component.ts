@@ -18,12 +18,14 @@ export class CodeComponent implements OnInit {
       for (let i = 0; i < array.length; i++) {
         (<HTMLElement>array[i]).style.color="#424242";
       }
+      // element.style.visibility = "visible";
     });
 
     element.addEventListener('sal:out', () => {
       for (let i = 0; i < array.length; i++) {
         (<HTMLElement>array[i]).style.color="#a1a1a1";
       }
+      // element.style.visibility = "hidden";
     });
   }
 

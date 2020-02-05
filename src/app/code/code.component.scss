@@ -13,7 +13,10 @@ svg {
   text-decoration: none;
   .mask {
     overflow: hidden;
-    height: 25vh;
+    img {
+      height: 25vh;
+      object-fit: cover;
+    }
   }
   // img {
   //     filter: brightness(1);
@@ -44,5 +47,14 @@ a:hover {
 @media only screen and (max-width: 725px) {
   .setHeight {
     height: fit-content;
+  }
+  .container {
+    max-width: initial;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 100%!important;
   }
 }
