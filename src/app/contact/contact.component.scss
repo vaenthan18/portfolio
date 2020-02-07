@@ -15,7 +15,7 @@
   margin-right: 0.5em;
   :hover {
     transform: scale(1.1);
-    color: #f8f9fa;
+    color: #f8f9fa !important;
   }
 }
 
@@ -28,9 +28,9 @@ a {
 }
 
 .text {
-  color: #d4af37;
+  color: #d4af37 !important;
   width: 90%;
-  opacity: 80%;
+  opacity: 80% !important;
 }
 
 #signature {
