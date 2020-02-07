@@ -31,7 +31,7 @@ export class LandingComponent implements OnInit {
     };
 
     function select() {
-      return Math.round(Math.random() * $randomnbr.length + 1);
+      return Math.round(Math.random() * $randomnbr.length);
     };
 
     function value() {

@@ -6,8 +6,11 @@
   src: url("../../assets/fonts/Ragland.ttf");
 }
 
+.icons {
+  margin-top: 0.5em;
+}
+
 .icon {
-  font-size: 3em;
   margin-left: 0.5em;
   margin-right: 0.5em;
   :hover {
@@ -25,30 +28,11 @@ a {
 }
 
 .text {
-//   color: #0ff;
-color: #D4AF37;
+  color: #d4af37;
   width: 90%;
-  font-family: futura-pt-light;
-  opacity: 60%;
-  font-size: 5em;
-}
-
-#contact {
-    font-size: 1.2em;
+  opacity: 80%;
 }
 
 #signature {
   font-family: Ragland;
-}
-
-#first {
-    opacity: 40%;
-}
-#second {
-    opacity: 60%;
-}
-#third {
-    opacity: 80%;
-    font-family: futura-pt-demi;
-    letter-spacing: 0.1em;
 }

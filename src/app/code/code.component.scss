@@ -58,3 +58,17 @@ a:hover {
     max-width: 100%!important;
   }
 }
+
+.blinking-cursor {
+  vertical-align: middle;
+  animation: 1.5s blink step-end infinite;
+}
+
+@keyframes blink{
+  from {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
