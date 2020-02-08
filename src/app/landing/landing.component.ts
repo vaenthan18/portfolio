@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery'
+import * as baffle from 'baffle'
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-landing',
@@ -49,6 +51,25 @@ export class LandingComponent implements OnInit {
     };
 
     $it = setInterval(value, $timer);
+
+    const text = ["INNOVATOR", "SOFTWARE ENGINEER", "GRAPHIC DESIGNER"];
+    const b = baffle('#subtitle');
+    b.set({
+      characters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ;$ÍØ§Æº^¶∞X!#ℵ&⟫Ωƛ",
+      speed: 75
+    });
+    //b.start();
+    b.reveal(1000, 1000);
+    const secondsCounter = interval(5000);
+    // Subscribe to begin publishing values
+    secondsCounter.subscribe(n => {
+      console.log(`It's been seconds since subscribing!`);
+      //b.start();
+      b.text(fn => {
+        return text[(text.indexOf(fn) + 1) % text.length];
+      });
+      b.reveal(1000);
+    });
   }
 }
 

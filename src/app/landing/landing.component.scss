@@ -393,3 +393,7 @@ h2 {
     visibility: hidden;
   }
 }
+
+#subtitle {
+  transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55)
+}
