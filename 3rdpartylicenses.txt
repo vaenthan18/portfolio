@@ -38,6 +38,9 @@ MIT
 @angular/router
 MIT
 
+baffle
+MIT
+
 bootstrap
 MIT
 The MIT License (MIT)
