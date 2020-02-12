@@ -3,6 +3,10 @@
     height: 100vh;
 }
 
+.d-flex {
+  align-items: center;
+}
+
 svg {
   height: 1.5em;
   margin-left: 0.5em;
@@ -25,6 +29,12 @@ svg {
 
 a:hover {
   background-color: black;
+  color: white;
+  svg {
+    path {
+      fill: white;
+    }
+  }
   img {
     filter: brightness(1);
   }
@@ -42,6 +52,16 @@ a:hover {
 
 .card {
   transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 835px) {
+  .card-body {
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
 }
 
 @media only screen and (max-width: 725px) {

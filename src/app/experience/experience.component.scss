@@ -8,12 +8,20 @@
 }
 
 img {
-  background-color: black;
+  margin-top: 0 !important;
+  flex: none;
 }
 
 .image {
   overflow: hidden;
-  height: 6em;
+  height: 20vh;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.card-body {
+  height: 15vh;
 }
 
 h1 {
@@ -29,12 +37,43 @@ h1 {
 }
 
 .card {
-    transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 725px) {
-  .setHeight {
-    height: fit-content;
+.d-flex {
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  h5 {
+    font-size: 1.1em;
   }
 }
 
+@media only screen and (max-width: 725px) {
+  .card-body {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .badge {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .setHeight {
+    height: fit-content;
+  }
+  .badge {
+    font-size: 0.8em;
+  }
+  .card-body {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 100%!important;
+  }
+}
