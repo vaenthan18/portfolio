@@ -1,0 +1,39 @@
+$KPMG: rgb(0, 94, 184);
+$AMD: rgb(176, 40, 40);
+
+a {
+    $link: $KPMG;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: -1px;
+      width: 0;
+      height: 100%;
+      z-index: -1;
+      transition: 0.35s cubic-bezier(0.25, 0.1, 0, 1.6);
+    }
+    &:hover:after {
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  a.KPMG {
+    color: $KPMG;
+    &::after {
+      background: rgba($KPMG, 0.25);
+    }
+  }
+
+  a.AMD {
+    color: $AMD;
+    &::after {
+      background: rgba($AMD, 0.25);
+    }
+  }
