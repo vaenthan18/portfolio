@@ -1,5 +1,6 @@
 $KPMG: rgb(0, 94, 184);
 $AMD: rgb(176, 40, 40);
+$GEM: rgb(12, 88, 230);
 
 a {
     $link: $KPMG;
@@ -35,5 +36,12 @@ a {
     color: $AMD;
     &::after {
       background: rgba($AMD, 0.25);
+    }
+  }
+
+  a.GEM {
+    color: $GEM;
+    &::after {
+      background: rgba($GEM, 0.25);
     }
   }
